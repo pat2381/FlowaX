@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowaX", "FlowaX\FlowaX.csproj", "{C993F283-D0F3-4EB7-A060-CBAB409A953F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowaX.Tests", "FlowaX.Tests\FlowaX.Tests.csproj", "{6EB5882D-8434-44BB-BFB0-7BD443A92BD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C993F283-D0F3-4EB7-A060-CBAB409A953F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C993F283-D0F3-4EB7-A060-CBAB409A953F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C993F283-D0F3-4EB7-A060-CBAB409A953F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C993F283-D0F3-4EB7-A060-CBAB409A953F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB5882D-8434-44BB-BFB0-7BD443A92BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB5882D-8434-44BB-BFB0-7BD443A92BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB5882D-8434-44BB-BFB0-7BD443A92BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB5882D-8434-44BB-BFB0-7BD443A92BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A272E55-307F-4D73-BBAF-E0666774357D}
+	EndGlobalSection
+EndGlobal
