@@ -23,24 +23,29 @@ namespace FlowaX.Tests
             Assert.Equal("Fehler aufgetreten", result.Error);
         }
 
-        //[Fact]
-        //public async Task Should_BindAsync_Successfully()
-        //{
-        //    //async Task<Result<int>> DoubleAsync(int x) => await Task.FromResult(Result<int>.Success(x * 2));
+        [Fact]
+        public async Task Should_BindAsync_Successfully()
+        {
+            // Simulierte asynchrone Funktion
+            async Task<Result<int>> DoubleAsync(int x)
+            {
+                await Task.Delay(100);  // Simulierte Verzögerung
+                return Result<int>.Success(x * 2);
+            }
 
-        //    //// Test: Verwende BindAsync korrekt
-        //    ////var result = await Result<int>.Success(5).BindAsync(DoubleAsync);
+            // Nutzung der Erweiterungsmethode
+            var result = await Result<int>.Success(5).BindAsync(DoubleAsync);
 
-        //    //Assert.True(result.IsSuccess);
-        //    //Assert.Equal(10, result.Value);
-        //}
+            Assert.True(result.IsSuccess);
+            Assert.Equal(10, result.Value);  // Ergebnis sollte 10 sein
+        }
 
         [Fact]
         public async Task Should_Handle_FromAsync_With_Exception()
         {
             async Task<int> FailingTask() => throw new InvalidOperationException("Fehler!");
             var result = await Result<int>.FromAsync(FailingTask);
-
+        
             Assert.False(result.IsSuccess);
             Assert.Equal("Fehler!", result.Error);
         }
