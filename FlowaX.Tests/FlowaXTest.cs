@@ -37,7 +37,7 @@ namespace FlowaX.Tests
             var result = await Result<int>.Success(5).BindAsync(DoubleAsync);
 
             Assert.True(result.IsSuccess);
-            Assert.Equal(10, result.Value);  // Ergebnis sollte 10 sein
+            Assert.Equal(10, result.Value); // Ergebnis sollte 10 sein
         }
 
         [Fact]
